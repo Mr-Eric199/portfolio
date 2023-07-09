@@ -372,14 +372,14 @@
 
 
 /* Media Query */
- @media (max-width:600px) {
+ @media (max-width:37.5rem) {
       #portfolio h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 0.5rem;
+    margin-bottom: 2px;
   }
   
   #portfolio p{
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.25rem;
+    margin-bottom: 2px;
   }
     }
