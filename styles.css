@@ -375,6 +375,7 @@
  @media (max-width:37.5rem) {
       #portfolio h2 {
     font-size: 0.25rem;
+    font-weight: 500;
     margin-bottom: 2px;
   }
   
