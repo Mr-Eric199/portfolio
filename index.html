@@ -1,3 +1,26 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+    
+    $to = "antwieric199@gmail.com";
+    
+    $subject = "Contact Form Submission from $name";
+    $headers = "From: $email";
+    
+    $mailBody = "Name: $name\n";
+    $mailBody .= "Email: $email\n";
+    $mailBody .= "Message:\n$message";
+    
+    if (mail($to, $subject, $mailBody, $headers)) {
+        echo "Thank you for your message. We will get back to you soon.";
+    } else {
+        echo "Sorry, there was an error sending your message.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -111,15 +134,15 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Form</h2>
-      <form action="mailto:antwieric199@gmail.com" method="post" enctype="text/plain">
+      <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="text/plain">
         <div class="form-group">
-          <input type="text" placeholder="Name" required>
+          <input type="text" name="name" placeholder="Name" required>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Message" required></textarea>
+          <textarea name="message" placeholder="Message" required></textarea>
         </div>
         <div class="form-group">
           <input type="submit" value="Send">
