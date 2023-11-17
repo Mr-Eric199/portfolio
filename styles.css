@@ -38,6 +38,20 @@
   .logo {
     font-size: 1.5rem;
   }
+.waterPath {
+      fill: none;
+      stroke: #0074d9; /* Blue color for water */
+      stroke-width: 3;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: draw 5s linear forwards;
+    }
+    
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
   
   .navbar-toggle {
     display: none;
