@@ -23,153 +23,212 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric Antwi - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio - Allow me to introduce myself (Eric Antwi) as a full stack web developer hailing from Ghana. Approximately six years ago, my journey into coding began. Initially, I delved into VB, and later transitioned to web technologies such as HTML, CSS, JavaScript, and PHP."
+    />
+    <meta name="keywords" content="eric, antwi, portfolio" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric Antwi - Portfolio</title>
-  <meta name="description" content="Portfolio - Allow me to introduce myself (Eric Antwi) as a full stack web developer hailing from Ghana. Approximately six years ago, my journey into coding began. Initially, I delved into VB, and later transitioned to web technologies such as HTML, CSS, JavaScript, and PHP.">
-  <meta name="keywords" content="eric, antwi, portfolio">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
-   
-</head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <button class="navbar-toggle" aria-label="Toggle navigation">
+            <span class="toggle-icon"></span>
+          </button>
+          <ul class="nav-links">
+            <button id="bgb" onclick="toggleBackground()">🌙</button>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-      
-    <nav class="navbar">
+    <section id="hero">
       <div class="container">
-     
-        
-        <button class="navbar-toggle" aria-label="Toggle navigation">
-          <span class="toggle-icon"></span>
-        </button>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <h2>Hello, World.</h2>
+        <h1>I am Eric Antwi</h1>
+        <h3>FULLSTACK WEB DEVELOPER (Software Engineer)</h3>
+      </div>
+    </section>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              Allow me to introduce myself as a full-stack web developer hailing
+              from Ghana. Approximately six years ago, my journey into coding
+              began. Initially, I delved into VB, and later transitioned to web
+              technologies such as HTML, CSS, JavaScript, and PHP. Throughout my
+              career, I have gained experience working for various companies. My
+              passion lies in assisting individuals in learning how to code and
+              enhancing their lives.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="img/profile-image.jpg" alt="Profile Image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+            <li>Django</li>
+            <li>SQL</li>
+            <li>UI/UX</li>
+            <li>SEO</li>
+            <li>CMS</li>
+          </ul>
+          <a href="#" class="cv-button">Download CV</a>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h2>Portfolio</h2>
+          <p>Check out my work. Here is a small sample of my projects.</p>
+          <div class="project">
+            <img src="img/project1.jpg" alt="Project 1" />
+            <div class="project-details">
+              <h3>Financial Services Corporation Website</h3>
+              <p>
+                This project involved developing a comprehensive website for a
+                Financial Services Corporation offering financial advice and
+                consultancy services. The website provides detailed information
+                about the company, its mission, and the range of services
+                offered. It includes features such as interactive financial
+                calculators, informative blog articles, and a secure client
+                portal for accessing personalized financial information.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/project2.jpg" alt="Project 2" />
+            <div class="project-details">
+              <h3>Real Estate Website</h3>
+              <p>
+                This project involved creating a modern and user-friendly
+                website for a Real Estate company. The website showcases the
+                available properties for sale or rent, along with detailed
+                property listings, high-quality images, and interactive maps. It
+                also includes features such as property search filters, and a
+                contact form for inquiries
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/project3.jpg" alt="Project 3" />
+            <div class="project-details">
+              <h3>Clinic Website</h3>
+              <p>
+                This project focused on developing a professional website for a
+                medical clinic. The website provides information about the
+                clinic's services, doctors, and facilities. It includes features
+                such as online appointment booking, patient testimonials, and a
+                health blog with informative articles. The design ensures a
+                user-friendly experience and promotes trust and credibility for
+                potential patients.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/project4.jpg" alt="Project 4" />
+            <div class="project-details">
+              <h3>Pharmacy Management System</h3>
+              <p>
+                This project involves the development of a comprehensive
+                pharmacy management system to streamline the operations of a
+                pharmacy. The system is designed to effectively manage various
+                aspects of pharmacy operations, including inventory management,
+                sales and billing, and customer management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Form</h2>
+          <form
+            action="<?php echo $_SERVER['PHP_SELF']; ?>"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:antwieric199@gmail.com">antwieric199@gmail.com</a>
+          </p>
+          <p>Phone number: <a href="tel:+233546566661">+233 546 566 661</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Eric Antwi</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
         </ul>
       </div>
-    </nav>
-  </header>
+    </footer>
 
-  
-  <section id="hero">
-    <div class="container">
-      <h2>Hello, World.</h2>
-      <h1>I am Eric Antwi</h1>
-      <h3>FULLSTACK WEB DEVELOPER (Software Engineer)</h3>
-    </div>
-  </section>
+    <!-- <script src="script.js"></script> -->
 
-  <main>
-  <section id="about">
-    <div class="container">
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>
-         Allow me to introduce myself as a full-stack web developer hailing from Ghana. Approximately six years ago, my journey into coding began. Initially, I delved into VB, and later transitioned to web technologies such as HTML, CSS, JavaScript, and PHP. Throughout my career, I have gained experience working for various companies. My passion lies in assisting individuals in learning how to code and enhancing their lives.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="img/profile-image.jpg" alt="Profile Image">
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Tailwind</li>
-        <li>Bootstrap</li>
-        <li>Git</li>
-        <li>Django</li>
-        <li>SQL</li>
-        <li>UI/UX</li>
-        <li>SEO</li>
-      </ul>
-      <a href="#" class="cv-button">Download CV</a>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <p>Check out my work. Here is a small sample of my projects.</p>
-      <div class="project">
-        <img src="img/project1.jpg" alt="Project 1">
-        <div class="project-details">
-          <h3>Financial Services Corporation Website</h3>
-          <p>This project involved developing a comprehensive website for a Financial Services Corporation offering financial advice and consultancy services. The website provides detailed information about the company, its mission, and the range of services offered. It includes features such as interactive financial calculators, informative blog articles, and a secure client portal for accessing personalized financial information.</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/project2.jpg" alt="Project 2">
-        <div class="project-details">
-          <h3>Real Estate Website</h3>
-          <p>This project involved creating a modern and user-friendly website for a Real Estate company. The website showcases the available properties for sale or rent, along with detailed property listings, high-quality images, and interactive maps. It also includes features such as property search filters, and a contact form for inquiries</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/project3.jpg" alt="Project 3">
-        <div class="project-details">
-          <h3>Clinic Website</h3>
-          <p>This project focused on developing a professional website for a medical clinic. The website provides information about the clinic's services, doctors, and facilities. It includes features such as online appointment booking, patient testimonials, and a health blog with informative articles. The design ensures a user-friendly experience and promotes trust and credibility for potential patients.</p>
-        </div>
-      </div>
-       <div class="project">
-        <img src="img/project4.jpg" alt="Project 4">
-        <div class="project-details">
-          <h3>Pharmacy Management System</h3>
-          <p>This project involves the development of a comprehensive pharmacy management system to streamline the operations of a pharmacy. The system is designed to effectively manage various aspects of pharmacy operations, including inventory management, sales and billing, and customer management.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Form</h2>
-      <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="text/plain">
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Name" required>
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Message" required></textarea>
-        </div>
-        <div class="form-group">
-          <input type="submit" value="Send">
-        </div>
-      </form>
-    </div>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:antwieric199@gmail.com">antwieric199@gmail.com</a></p>
-      <p>Phone number: <a href="tel:+233546566661">+233 546 566 661</a></p>
-    </div>
-  </section>
-</main>
-  
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Eric Antwi</p>
-      <ul class="footer-links">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <!-- <script src="script.js"></script> -->
-</body>
-
+    <script>
+      function toggleBackground() {
+        const button = document.getElementById("bgb");
+        const element = document.body;
+        if (element.classList.contains("bgc")) {
+          element.classList.remove("bgc");
+          button.textContent = "🌙";
+        } else {
+          element.classList.add("bgc");
+          button.textContent = "🌘";
+        }
+      }
+    </script>
+  </body>
 </html>

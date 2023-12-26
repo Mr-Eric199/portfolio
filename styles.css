@@ -18,11 +18,12 @@
   .container {
     max-width: 75rem;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: 1rem;
   }
   
   /* Header */
   
+
   header {
     background-color: #333;
     color: #fff;
@@ -35,6 +36,7 @@
     justify-content: space-between;
   }
   
+
 /*   .logo {
     font-size: 1.5rem;
   }
@@ -87,13 +89,24 @@
     color: #fff;
     text-decoration: none;
   }
+  #hero {
+/* 
+    background: linear-gradient(to left, blue, red), url('./code-coding.gif'); */
+    background-image: linear-gradient(rgba(30, 12, 12, 0.99),rgba(14,14,24,.493)),url(code-coding.gif);
+    
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+
+}
   
   /* Hero section */
   
   #hero {
     text-align: center;
     padding: 80px 0;
-    background-color: #555;
+    /* background-color: #555; */
     color: #fff;
   }
   
@@ -114,11 +127,12 @@
     font-weight: 300;
   }
   
+
   /* About section */
   
   #about {
     background-color: #fff;
-    padding: 80px 0;
+    padding: 0.625em 0;
     text-align: center;
   }
   
@@ -156,13 +170,13 @@
   
   #skills {
     background-color: #f7f7f7;
-    padding: 80px 0;
+    padding: 0.625em 0;
   }
   
   #skills h2 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 0.625em;
   }
   
   .skills-list {
@@ -213,14 +227,14 @@
   
   #portfolio {
     background-color: #fff;
-    padding: 80px 0;
+    padding: 0.625em 0;
     text-align: center;
   }
   
   #portfolio h2 {
     font-size: 2.25rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
   }
   
   #portfolio p {
@@ -284,7 +298,7 @@
   
   #contact {
     background-color: #f7f7f7;
-    padding: 80px 0;
+    padding: 0.625em 0;
     text-align: center;
   }
   
@@ -385,3 +399,14 @@
     margin-bottom: 2px;
   }
     }
+
+      /* dark or light */
+  .bgc{
+    background-color: rgba(0, 0, 0, 0.825) !important;
+    color: white !important;
+    #about,#skills,#portfolio,#contact {
+      background-color: rgba(0, 0, 0, 0.825);
+     
+    }
+    
+}
