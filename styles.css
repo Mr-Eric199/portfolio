@@ -388,11 +388,18 @@
 
 /* Media Query */
  @media (max-width:37.5rem) {
+  /* #about h2,#skills h2,#contact h2, #portfolio h2{
+ font-size:1.25rem ;
+  }
+  .about-content p{
+    font-size:0.875rem ;
+  } */
       #portfolio h2 {
     font-size: 0.25rem;
     font-weight: 500;
     margin-bottom: 2px;
   }
+
   
   #portfolio p{
     font-size: 0.25rem;

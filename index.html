@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <span class="toggle-icon"></span>
           </button>
           <ul class="nav-links">
-            <button id="bgb" onclick="toggleBackground()">🌙</button>
+            <button id="bgb" onclick="toggleBackground()">🌘</button>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -223,10 +223,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         const element = document.body;
         if (element.classList.contains("bgc")) {
           element.classList.remove("bgc");
-          button.textContent = "🌙";
+          button.textContent = "🌘";
         } else {
           element.classList.add("bgc");
-          button.textContent = "🌘";
+          button.textContent = "🌙";
         }
       }
     </script>
