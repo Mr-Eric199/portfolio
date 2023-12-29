@@ -187,7 +187,7 @@
   }
  .about-content p span {
   animation-range-start:cover 14vh;
-  animation-range-end:cover 50vh;
+  animation-range-end:cover 40vh;
   }
   @keyframes scroll-reveal {
     to{
@@ -448,14 +448,14 @@
     font-size:0.875rem ;
   } */
       #portfolio h2 {
-    font-size: 0.25rem;
+    font-size: 2.25rem;
     font-weight: 500;
     margin-bottom: 2px;
   }
 
   
   #portfolio p{
-    font-size: 0.25rem;
+    font-size: 1.25rem;
     margin-bottom: 2px;
   }
     }
