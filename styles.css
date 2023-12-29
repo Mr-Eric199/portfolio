@@ -454,9 +454,14 @@
   }
 
   
+  
+  
   #portfolio p{
-    font-size: 1.25rem;
+    font-size: 0.25rem;
     margin-bottom: 2px;
+  }
+  #portfolio .portfolio__subtitle{
+    font-size: 1.25rem;
   }
     }
 
