@@ -85,7 +85,11 @@
     display: flex;
     list-style-type: none;
   }
-  
+  .nav-links button{
+    background: transparent;
+  border: none;
+  }
+
   .nav-links li {
     margin-left: 1.25rem;
   }
@@ -164,7 +168,33 @@
     margin: 0 auto;
     margin-bottom: 40px;
   }
-  
+  /* scroll reveal */
+  .about-content span{
+    color:hsla(0, 0%, 0%, 0.2) ;
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0),rgb(0, 0, 0));
+    animation: scroll-reveal linear forwards;
+    animation-timeline:view() ;
+
+  }
+
+  .about-content h2 span{
+
+    animation-range-start:cover 20vh;
+    animation-range-end:cover 30vh;
+  }
+ .about-content p span {
+  animation-range-start:cover 14vh;
+  animation-range-end:cover 50vh;
+  }
+  @keyframes scroll-reveal {
+    to{
+      background-size: 100% 100%;
+    }
+    
+  }
   .about-content h2 {
     font-size: 48px;
     font-weight: 700;
@@ -437,6 +467,12 @@
     #about,#skills,#portfolio,#contact {
       background-color: rgba(0, 0, 0, 0.825);
      
+    }
+      /* scroll reveal */
+    .about-content span{
+      color:hsl(0 0% 100% /0.2 ) ;
+      background-image: linear-gradient(90deg, red,blue);
+    
     }
     
 }
